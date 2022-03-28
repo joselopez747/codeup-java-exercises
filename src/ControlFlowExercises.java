@@ -24,13 +24,19 @@ public class ControlFlowExercises {
 //Exercise 1b
 //Do While Loop
 //    Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
-    int byTwos = 0;
-    do {
-        System.out.println(byTwos);
-        byTwos += 2;
-    } while(byTwos <= 100);
+//    int byTwos = 0;
+//    do {
+//        System.out.println(byTwos);
+//        byTwos += 2;
+//    } while(byTwos <= 100);
 
 //    Alter your loop to count backwards by 5's from 100 to -10.
+
+        int i = 100;
+        do {
+            System.out.println(i);
+            i -= 5;
+        } while(i >= -10);
 
 //    Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
 //        2
