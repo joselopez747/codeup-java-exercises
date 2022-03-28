@@ -24,6 +24,11 @@ public class ControlFlowExercises {
 //Exercise 1b
 //Do While Loop
 //    Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
+    int byTwos = 0;
+    do {
+        System.out.println(byTwos);
+        System.out.println(++byTwos * 2);
+    } while(byTwos <= 49);
 
 //    Alter your loop to count backwards by 5's from 100 to -10.
 
