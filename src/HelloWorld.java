@@ -72,10 +72,10 @@ public class HelloWorld {
 
 
         //13
-        int x = 4;
-        x = x + 5;
-
-        int a = x++ 5;
+//        int x = 4;
+//        x = x + 5;
+//
+//        int a = x++ 5;
 
 
 
