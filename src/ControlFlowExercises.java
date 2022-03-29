@@ -48,9 +48,7 @@ public class ControlFlowExercises {
         int i = 2;
         do {
             System.out.println(i);
-            i += Math.pow(i, 2);
-        } while (i <= 1000000);
-
-
+            i = i * i;
+        } while (i <= 10000);
     }
 }
