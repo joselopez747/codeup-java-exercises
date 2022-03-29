@@ -1,5 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
-
+import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -12,7 +11,7 @@ public class ControlFlowExercises {
 //        int i = 5;
 //   Create a while loop that runs so long as i is less than or equal to 15
 //        while(i <= 15) {
-//            System.out.println(i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 //   Each loop iteration, output the current value of i, then increment i by one.
@@ -25,11 +24,11 @@ public class ControlFlowExercises {
 //Exercise 1b
 //Do While Loop
 //    Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
-//    int byTwos = 0;
+//    int i = 0;
 //    do {
-//        System.out.println(byTwos);
-//        byTwos += 2;
-//    } while(byTwos <= 100);
+//        System.out.println(i);
+//        i += 2;
+//    } while(i <= 100);
 
 //    Alter your loop to count backwards by 5's from 100 to -10.
 
@@ -52,6 +51,15 @@ public class ControlFlowExercises {
 //            i = i * i;
 //        } while (i <= 10000);
 
+        //correct answer
+//        long i = 2;
+//        do {
+//            System.out.println(i);
+//            i *= i;
+//        } while (i <= 1_000_000L);
+        //***needed to change i front int to long.***
+        //***remember there is a max value for int***
+
 
 
 
@@ -68,6 +76,12 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
+        //same for this one above.
+        //Change the int to long ****
+
+//        for (long i = 2; i <= 1000000L; i *= i){
+//            System.out.println(i);
+//        }
 
 // Exercise 2 Fizzbuzz
 // One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
@@ -78,14 +92,15 @@ public class ControlFlowExercises {
 // For numbers which are multiples of both three and five: print “FizzBuzz”.
 
 //        for (int i = 1; i <= 100; i++) {
-//            if (((i % 3) == 0) && ((i % 5) ==0)) {
+//            if (((i % 3) == 0) && ((i % 5) == 0)) {
 //                System.out.println("FizzBuzz");
-//            } else if ((i % 3) == 0){
+//            } else if ((i % 3) == 0) {
 //                System.out.println("Fizz");
-//            } else if ((i % 5) == 0){
+//            } else if ((i % 5) == 0) {
 //                System.out.println("Buzz");
-//            } else
-//            System.out.println(i);
+//            } else {
+//                System.out.println(i);
+//            }
 //        }
 
 
@@ -109,6 +124,14 @@ public class ControlFlowExercises {
 // 3      | 9       | 27
 // 4      | 16      | 64
 // 5      | 25      | 125
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What number would you like to go up to? ");
+        int num = sc.nextInt();
+        System.out.println("Here is your table!");
+
+
+
 
 
 
