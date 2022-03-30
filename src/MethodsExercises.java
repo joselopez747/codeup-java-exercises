@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
 
 // Create a class named MethodsExercises. Inside of your class, write code to create the specified methods. Test your code by creating a main method and calling each of the methods you've created.
@@ -40,13 +42,29 @@ public class MethodsExercises {
 
 
 
+    // Methods Exercise 2
+    // create a method that validates that user input is in a certain range.
+
+    public static int getInteger(int min, int max){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number between " + min + " and " + max);
+        int userInput = sc.nextInt();
+
+        //this starts the loop
+        if (userInput < min || userInput > max) {
+            System.out.println("Number is out of range");
+            return getInteger(min, max);
+        } else {
+
+        //this stops the loop
+            System.out.println("Number is in range");
+            return userInput;
+        }
+    }
+
+
 
     public static void main(String[] args) {
-        System.out.println(addition(10, 10));
-        System.out.println(subtraction(10, 10));
-        System.out.println(multiplication(10, 10));
-        System.out.println(division(10,10));
-        System.out.println(modulus(10, 10));
-
+        System.out.println(getInteger(1, 10));
     }
 }
