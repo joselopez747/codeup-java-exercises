@@ -6,12 +6,13 @@ public class JavaWarmups {
 //
 //Create a method, returnFirstCapitalLetter, that takes in a string and returns the first capital letter as a char. If no capital letter is found, return a single space character ' '. Assume only letters in the input string and all possible inputs will have at least one letter.
 
-    public static void returnFirstCapitalLetter(String s){
-        for (int i = 0; i < s.length(); i++){
-            if (s == s.toUpperCase()){
-                return s[i].toUpperCase();
+    public static char returnFirstCapitalLetter(String s){
+        for (int i = 0; i < s.length(); i += 1){
+            if (s.charAt(i) == Character.toUpperCase(s.charAt(i))){
+                return s.charAt(i);
             }
         }
+        return ' ';
     }
 
 //
@@ -22,6 +23,6 @@ public class JavaWarmups {
 //returnFirstCapitalLetter("hELlO") // returns 'E'
 //returnFirstCapitalLetter("H") // returns 'H'
     public static void main(String[] args) {
-returnFirstCapitalLetter("Jose");
+
     }
 }
