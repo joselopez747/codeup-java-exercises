@@ -1,3 +1,4 @@
+import javax.print.MultiDocPrintService;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -45,22 +46,22 @@ public class MethodsExercises {
     // Methods Exercise 2
     // create a method that validates that user input is in a certain range.
 
-//    public static int getInteger(int min, int max){
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter a number between " + min + " and " + max);
-//        int userInput = sc.nextInt();
-//
-//        //this starts the loop
-//        if (userInput < min || userInput > max) {
-//            System.out.println("Number is out of range");
-//            return getInteger(min, max);
-//        } else {
-//
-//        //this stops the loop
-//            System.out.println("Number is in range");
-//            return userInput;
-//        }
-//    }
+    public static int getInteger(int min, int max){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number between " + min + " and " + max);
+        int userInput = sc.nextInt();
+
+        //this starts the recursion
+        if (userInput < min || userInput > max) {
+            System.out.println("Number is out of range");
+            return userInput;
+        } else {
+
+        //this stops the recursion
+            System.out.println("Number is in range");
+            return userInput;
+        }
+    }
 
 
 
@@ -84,9 +85,11 @@ public class MethodsExercises {
 // 4! = 1 x 2 x 3 x 4   = 24
 
 
-
+//    public static int factorial(int n){
+//        System.out.println(getInteger(1,10));
+//    }
 
     public static void main(String[] args) {
-        System.out.println(getInteger(1, 10));
+
     }
 }
