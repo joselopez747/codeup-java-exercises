@@ -171,7 +171,7 @@ class Person {
 
 
 
-public class OOPLecture {
+public class OOPLectureNotes {
     public static void main(String[] args) {
         // This is where we will do all our work with the class we're creating
         Post firstPost = new Post();
