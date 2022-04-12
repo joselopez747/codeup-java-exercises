@@ -37,6 +37,12 @@ public class Monster {
         this.damage = damage;
     }
 
+    public String attack(Monster opponent){
+        int initialOpponentHp = opponent.hitPoints;
+        opponent.hitPoints -= this.damage;
+        return this.name + " hit " + opponent.name + " for " + this.damage + " points of damage.\n" +
+                opponent.name + " now has " + opponent.hitPoints + " hit points left." ;
+    }
 
     public Monster(String name, int armorClass, int hitPoints, int damage) {
         this.name = name;

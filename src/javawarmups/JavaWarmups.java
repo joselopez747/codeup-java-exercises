@@ -1,8 +1,10 @@
+package javawarmups;
+
 import java.util.Locale;
 
 public class JavaWarmups {
 //================================= 31 March WARM UP
-//Create a Java class, JavaWarmups. Add a main method to test the warmup methods.
+//Create a Java class, javawarmups.JavaWarmups. Add a main method to test the warmup methods.
 //
 //Create a method, returnFirstCapitalLetter, that takes in a string and returns the first capital letter as a char. If no capital letter is found, return a single space character ' '. Assume only letters in the input string and all possible inputs will have at least one letter.
 

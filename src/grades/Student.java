@@ -26,6 +26,12 @@ public class Student {
         grades.add(grade);
     }
 
+//    public double getGradeAverage(){
+//        double total = 0;
+//        for (Integer grade : Grades);
+//
+//    }
+
     public Student(String name){
         this.name = name;
         this.grades = new ArrayList<>();
